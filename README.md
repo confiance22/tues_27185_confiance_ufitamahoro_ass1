@@ -18,22 +18,19 @@ This database manages a **Library Management System**. It tracks books, members,
 
 ## Screenshots
 Created tables: Books, Members, Borrowings, Fines.
-![1](https://github.com/user-attachments/assets/f53d2e84-820c-4c69-a2f3-072681b4d8bc)
+![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
+
 Inserted, 
-![2](https://github.com/user-attachments/assets/f2854082-4ce9-4bae-9e97-372d0c87e2cf)
-![3](https://github.com/user-attachments/assets/50de9896-06a8-4532-aaa2-846b55c583fa)
-![4](https://github.com/user-attachments/assets/ed61db0b-3bdd-4681-92f1-f74a7c330d9f)
-![5](https://github.com/user-attachments/assets/7ee00eab-40af-4e54-88a5-0a033573c096)
+![Screenshot (345)](https://github.com/user-attachments/assets/1b44f3e0-5904-499e-a295-e7cb6a8e8a9d)
+![Screenshot (344)](https://github.com/user-attachments/assets/255377b7-4eec-450f-b555-d6d916bce1dd)
+![Screenshot (343)](https://github.com/user-attachments/assets/08e6ee16-bd41-4b74-8bf5-e2bcdac16e80)
+![Screenshot (342)](https://github.com/user-attachments/assets/15077523-29d0-4452-9ce5-6953bbcbfec7)
 
-updated, and deleted data.
-before
-![3](https://github.com/user-attachments/assets/dc0604d2-96db-489f-a79f-dbaab31707da)
+updated before
+![Screenshot (345)](https://github.com/user-attachments/assets/b2a7c40d-8e2c-4921-bd1f-55241da7b5b8)
 
-updating
-![updating](https://github.com/user-attachments/assets/d3534c67-9a0e-4141-b819-a7b282f8d7cb)
-
-after
-![after update](https://github.com/user-attachments/assets/354254b8-58ad-4921-b39a-7dbe7f3f3a16)
+after update
+![Screenshot (346)](https://github.com/user-attachments/assets/d0333c34-51a9-4211-a48b-193b521b3688)
 
 and deleted data.
 before
