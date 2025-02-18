@@ -34,7 +34,7 @@ after update
 
 and deleted data.
 before
-![3](https://github.com/user-attachments/assets/12ec2251-aa2b-4110-b892-c93f75fb3b2b)
+![Screenshot (347)](https://github.com/user-attachments/assets/3504eaeb-c718-4dab-b0db-ad41712ce421)
 
 after delete
 ![after delete](https://github.com/user-attachments/assets/350eefb7-113e-4dc8-ba79-d55b05c272e6)
