@@ -53,7 +53,8 @@ Found the top 5 highest values in each category.
 ![Screenshot (338)](https://github.com/user-attachments/assets/dad731a7-4fb7-4980-9d01-db80cf9cdfda)
 
 Identified entities with more than 3 related transactions.
-![Screenshot (339)](https://github.com/user-attachments/assets/4c71b3e6-0854-427f-853d-1095caf472aa)
+![image](https://github.com/user-attachments/assets/fee919dc-6ad1-406f-8d75-1177995aa66b)
+
 
 
 
