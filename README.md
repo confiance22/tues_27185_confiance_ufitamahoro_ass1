@@ -3,7 +3,8 @@
 ## Student Information
 - **Student ID:** 27185
 - **Name:** Confiance UFITAMAHORO
-- **Concentration:** Database Development with PL/SQL
+- **Concentration:** Software Engineering
+- **Course:** Database Development with PL/SQL
 
 ## Problem Statement
 This database manages a **Library Management System**. It tracks books, members, borrowings, and fines.
