@@ -20,13 +20,11 @@ This database manages a **Library Management System**. It tracks books, members,
 ## Created tables: Books, Members, Borrowings, Fines.
 ** Books Table:
 -Columns: BookID (primary key), Title, PublishedDate.
-Members Table:
+** Members Table:
 -Columns: MemberID (primary key), Name, Email, JoinDate.
-Borrowings Table:
-Tracks book borrowings by members.
+** Borrowings Table:
 -Columns: BorrowID (primary key), BookID (references Books), MemberID (references Members), BorrowDate, ReturnDate.
-Fines Table:
-Records fines related to borrowings.
+** Fines Table:
 -Columns: FineID (primary key), BorrowID (references Borrowings), Amount, PaidStatus.
 ![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
 
