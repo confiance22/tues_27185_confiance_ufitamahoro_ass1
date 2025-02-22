@@ -18,11 +18,17 @@ This database manages a **Library Management System**. It tracks books, members,
 - Identified entities with more than 3 related transactions.
 
 ## Screenshots
+
+
+
 ## Grant user Select Privillage
 ![Screenshot (355)](https://github.com/user-attachments/assets/d0662b38-48fb-482b-a2bc-027f190e8f40)
 
 ## Created tables: Books, Members, Borrowings, Fines.
 ![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
+
+## Design a conceptual diagram illustrating the tables with relationships
+![Screenshot (357)](https://github.com/user-attachments/assets/ed52c418-cdab-459b-8ae7-9c429d53c26e)
 
 ## Inserted, 
 **All records inserted to into all tables
