@@ -47,7 +47,7 @@ subqueries
 ![Screenshot (336)](https://github.com/user-attachments/assets/d0eec7ec-99f1-47a6-89f7-e009a3ec50a6)
 
 Retrieved records added in the past 7 days.
-![Screenshot (337)](https://github.com/user-attachments/assets/a8ba0794-0dbb-4be3-802a-e8cc064213ce)\
+![image](https://github.com/user-attachments/assets/ddafab1a-3fb5-4626-ae9d-ebc3478ccbb7)
 
 Found the top 5 highest values in each category.
 ![Screenshot (338)](https://github.com/user-attachments/assets/dad731a7-4fb7-4980-9d01-db80cf9cdfda)
