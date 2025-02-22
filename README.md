@@ -17,7 +17,7 @@ This database manages a **Library Management System**. It tracks books, members,
 - Identified entities with more than 3 related transactions.
 
 ## Screenshots
-Created tables: Books, Members, Borrowings, Fines.
+## Created tables: Books, Members, Borrowings, Fines.
 ![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
 
 ## Inserted, 
