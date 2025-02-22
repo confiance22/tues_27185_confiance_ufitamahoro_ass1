@@ -18,7 +18,6 @@ SQL> show pdbs;
     CON_ID CON_NAME                       OPEN MODE  RESTRICTED
 ---------- ------------------------------ ---------- ----------
          2 PDB$SEED                       READ ONLY  NO
-         3 TUE_27185_PDB_ASS1             READ WRITE NO
          5 STUDENTID_PDB_ASS1             READ WRITE NO
 SQL> ALTER PLUGGABLE DATABASE studentID_pdb_ass1 SAVE STATE;
 
