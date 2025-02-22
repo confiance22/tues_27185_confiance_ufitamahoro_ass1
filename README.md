@@ -20,7 +20,7 @@ This database manages a **Library Management System**. It tracks books, members,
 Created tables: Books, Members, Borrowings, Fines.
 ![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
 
-Inserted, 
+## Inserted, 
 ![Screenshot (345)](https://github.com/user-attachments/assets/1b44f3e0-5904-499e-a295-e7cb6a8e8a9d)
 ![Screenshot (344)](https://github.com/user-attachments/assets/255377b7-4eec-450f-b555-d6d916bce1dd)
 ![Screenshot (343)](https://github.com/user-attachments/assets/08e6ee16-bd41-4b74-8bf5-e2bcdac16e80)
