@@ -28,7 +28,8 @@ This database manages a **Library Management System**. It tracks books, members,
 ![Screenshot (341)](https://github.com/user-attachments/assets/727e56f4-64ef-4572-8409-7901effe14d0)
 
 ## Design a conceptual diagram illustrating the tables with relationships
-![Screenshot (357)](https://github.com/user-attachments/assets/ed52c418-cdab-459b-8ae7-9c429d53c26e)
+![image](https://github.com/user-attachments/assets/d646f6bf-16a0-4bc9-9c3e-6d115ed3f088)
+
 
 ## Inserted, 
 **All records inserted to into all tables
