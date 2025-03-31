@@ -1,9 +1,54 @@
-//GRANT SELECT PRIVILLAGES
+//SQL PLUS
 
-GRANT SELECT ON Books TO TUE27185PDBASS1;
-GRANT SELECT ON Fines TO TUE27185PDBASS1;
-GRANT SELECT ON Borrowings TO TUE27185PDBASS1;
-GRANT SELECT ON Books TO TUE27185PDBASS1;
+    
+SQL*Plus: Release 21.0.0.0.0 - Production on Tue Feb 25 22:35:23 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+Enter user-name: sys as sysdba
+Enter password:
+
+Connected to:
+Oracle Database 21c Enterprise Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> ALTER SESSION SET CONTAINER = TUE_27185_PDB_ASS1;
+
+Session altered.
+
+SQL> GRANT DBA TO TUE27185PDBASS1;
+
+Grant succeeded.
+
+SQL> ALTER USER TUE27185PDBASS1 QUOTA UNLIMITED ON USERS;
+
+User altered.
+
+SQL> GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE PROCEDURE, CREATE SEQUENCE, CREATE TRIGGER TO TUE27185PDBASS1;
+
+Grant succeeded.
+
+SQL> SELECT username, tablespace_name, bytes, max_bytes
+  2  FROM dba_ts_quotas
+  3  WHERE username = 'TUE27185PDBASS1';
+
+USERNAME
+--------------------------------------------------------------------------------
+TABLESPACE_NAME                     BYTES  MAX_BYTES
+------------------------------ ---------- ----------
+TUE27185PDBASS1
+USERS                             2097152         -1
+
+
+SQL> show pdbs;
+
+    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
+---------- ------------------------------ ---------- ----------
+         2 PDB$SEED                       READ ONLY  NO
+         3 TUE_27185_PDB_ASS1             READ WRITE NO
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //CREATING TABLES
 
@@ -35,7 +80,14 @@ CREATE TABLE Fines (
     PaidStatus VARCHAR2(10)
 );
 
-//INSERT RECORDS
+//GRANT SELECT PRIVILLAGES
+
+GRANT SELECT ON Books TO TUE27185PDBASS1;
+GRANT SELECT ON Fines TO TUE27185PDBASS1;
+GRANT SELECT ON Borrowings TO TUE27185PDBASS1;
+GRANT SELECT ON Books TO TUE27185PDBASS1;
+
+//INSERTING RECORDS
 
 INSERT INTO Books (BookID, Title, PublishedDate) VALUES (1, 'PL/SQL',TO_DATE('2025-02-10', 'YYYY-MM-DD'));
 INSERT INTO Books (BookID, Title, PublishedDate) VALUES (2, 'Operating System',TO_DATE('2025-02-10', 'YYYY-MM-DD'));
@@ -52,7 +104,7 @@ INSERT INTO Members (MemberID, Name, Email, JoinDate) VALUES (3, 'kevin', 'kevin
 INSERT INTO Members (MemberID, Name, Email, JoinDate) VALUES (4, 'prince', 'prince@gmail.com', TO_DATE('2020-12-31', 'YYYY-MM-DD'));
 INSERT INTO Members (MemberID, Name, Email, JoinDate) VALUES (5, 'fabrice', 'fabrice@gmail.com', TO_DATE('2019-06-15', 'YYYY-MM-DD'));
 
--- Insert into Borrowings table with adjusted dates
+
 INSERT INTO Borrowings (BorrowID, BookID, MemberID, BorrowDate, ReturnDate) VALUES (1, 1, 1, TO_DATE('2024-11-02', 'YYYY-MM-DD'), TO_DATE('2024-11-07', 'YYYY-MM-DD'));  
 INSERT INTO Borrowings (BorrowID, BookID, MemberID, BorrowDate, ReturnDate) VALUES (2, 2, 2, TO_DATE('2023-07-12', 'YYYY-MM-DD'), TO_DATE('2023-07-16', 'YYYY-MM-DD'));  
 INSERT INTO Borrowings (BorrowID, BookID, MemberID, BorrowDate, ReturnDate) VALUES (3, 3, 3, TO_DATE('2022-11-22', 'YYYY-MM-DD'), TO_DATE('2022-11-26', 'YYYY-MM-DD'));  
@@ -70,7 +122,7 @@ INSERT INTO Fines (FineID, BorrowID, Amount, PaidStatus) VALUES (3, 3, 00.00, 'n
 INSERT INTO Fines (FineID, BorrowID, Amount, PaidStatus) VALUES (4, 4, 15.00, 'Paid');
 INSERT INTO Fines (FineID, BorrowID, Amount, PaidStatus) VALUES (5, 5, 00.00, 'not Paid');
 
-//SELECT * RECORDS
+//SELECTING * RECORDS
 
 SELECT * FROM Books;
 SELECT * FROM Borrowings;
@@ -82,12 +134,12 @@ SELECT * FROM Members;
 UPDATE Members SET Email = 'confiance@gmail.com' WHERE MemberID = 1;
 UPDATE Fines SET Paidstatus = 'not paid' WHERE FineID = 1;
 
-//DELETE RECORDS
+//DELETING RECORDS
 
 DELETE FROM Fines WHERE FineID = 5;
 
 
-//JOIN TABLE
+//JOINING TABLES
 
 SELECT b.Title, m.Name, br.BorrowDate, br.ReturnDate
 FROM Borrowings br
@@ -114,5 +166,3 @@ SELECT BookID, COUNT(*) AS TransactionCount
 FROM Borrowings
 GROUP BY BookID
 HAVING COUNT(*) > 3;
-
-TRUNCATE TABLE Borrowings;
